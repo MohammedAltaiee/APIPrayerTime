@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    link
+  </head>
+  <body>
+    <div style="height: 100vh">
+      <div style="margin-top: 0.8%">
+        <!-- city name  -->
+        <div style="color: white; margin-left: 40px">
+          <h1 id="city-name">Montreal</h1>
+          <h6 id="date" style="font-size: 40px; font-weight: 200">
+            7/ october/2024
+          </h6>
+        </div>
+        <!--END OF city name  -->
+
+        <hr style="margin: 0px 50px; border-color: rgb(88, 134, 119)" />
+
+        <!-- prayer time  -->
+        <div
+          class="center"
+          style="
+            height: 200px;
+            width: 95%;
+            margin-top: 80px;
+            justify-content: space-around;
+          "
+        >
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Fajar</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Fajr-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Sunrise</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Sunrise-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Dhuhr</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Dhuhr-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Asr</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Asr-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Maghrib</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Maghrib-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- card  -->
+          <div class="card">
+            <div class="header">
+              <h1>Isha</h1>
+            </div>
+            <div class="body center" style="height: 75%">
+              <h1 id="Isha-time" class="time">5:00 AM</h1>
+            </div>
+          </div>
+          <!-- end of card  -->
+        </div>
+        <!-- end of prayer time  -->
+        <!-- change city select  -->
+        <div class="center" style="margin-top: 100px">
+          <select
+            name="city"
+            id="city"
+            style="
+              width: 300px;
+              height: 40px;
+              font-size: 25px;
+              border-radius: 15px;
+              font-family: tajawal;
+              border: none;
+              padding: 5px;
+              background-color: rgba(255, 255, 255, 0.45);
+              color: rgb(59, 35, 3);
+            "
+          >
+            <option value="Montreal">Montreal</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Vancouver">Vancouver</option>
+          </select>
+        </div>
+        <!-- end of change city select  -->
+      </div>
+    </div>
+  </body>
+
+  <script src="script/script.js"></script>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+</html>
